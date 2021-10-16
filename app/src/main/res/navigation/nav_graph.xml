@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.guzcode.huntinghouse.view.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_buyListFragment"
+            app:destination="@id/navBuyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navBuyFragment"
+        android:name="com.guzcode.huntinghouse.view.ui.buy.BuyListFragment"
+        android:label="fragment_buy_list"
+        tools:layout="@layout/fragment_buy_list" >
+        <action
+            android:id="@+id/action_buyListFragment_to_sellListFragment"
+            app:destination="@id/navSellFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navSellFragment"
+        android:name="com.guzcode.huntinghouse.view.ui.sell.SellListFragment"
+        android:label="fragment_sell_list"
+        tools:layout="@layout/fragment_sell_list" >
+        <action
+            android:id="@+id/action_sellListFragment_to_profileFragment"
+            app:destination="@id/navProfileFragment" />
+        <action
+            android:id="@+id/action_navSellFragment_to_sellEditFragment"
+            app:destination="@id/sellEditFragment" />
+        <action
+            android:id="@+id/action_navSellFragment_to_sellCreateFragment"
+            app:destination="@id/sellCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navProfileFragment"
+        android:name="com.guzcode.huntinghouse.view.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <dialog android:id="@+id/sellCreateFragment"
+        android:name="com.guzcode.huntinghouse.view.ui.sell.SellCreateFragment"
+        android:label="CreateSell"
+        tools:layout="@layout/fragment_sell_create"/>
+    <dialog android:id="@+id/sellEditFragment"
+        android:name="com.guzcode.huntinghouse.view.ui.sell.SellEditFragment"
+        android:label="CreateSell"
+        tools:layout="@layout/fragment_sell_edit"/>
+</navigation>

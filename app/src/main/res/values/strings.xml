@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hunting House</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tool_bar_text_home">Hunting House</string>
+    <string name="home_title">What is Hunting House?</string>
+    <string name="home_description">It is the best application to sell and buy a house, fast, safe and easy. Hunting House has map integration, QR code generation, and more tools to assist you in the buying and selling process.</string>
+    <string name="createTitle">Publish a property</string>
+    <string name="createLabelTitle">Title</string>
+    <string name="createLabelImages">Images</string>
+    <string name="createLabelLocation">Location</string>
+    <string name="createLabelDescription">Description</string>
+    <string name="publishProperty">PUBLISH</string>
+    <string name="editProperty">EDIT</string>
+    <string name="deleteProperty">DELETE</string>
+    <string name="editTitle">Edit Property</string>
+    <string name="profileTitle">Bulding Profile UI</string>
+    <string name="createLabelArea">Area</string>
+</resources>

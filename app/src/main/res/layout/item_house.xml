@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/shape_card"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivItemHouse"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200"
+                android:scaleType="centerCrop"
+                android:src="@drawable/house_placeholder"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/tvItemHouseTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="House Title"
+                    android:textSize="25sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvItemHouseResume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="House items, House items"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvItemHouseArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="House Title"
+                    android:textSize="15sp"></TextView>
+                <TextView
+                    android:id="@+id/tvItemHouseId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="House Title"
+                    android:textSize="10sp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivItemHouseIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/arrow_next"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+

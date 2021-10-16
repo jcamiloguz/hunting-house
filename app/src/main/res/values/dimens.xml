@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logoHeight">150dp</dimen>
+    <dimen name="tollBarHeight">30dp</dimen>
+    <dimen name="tollBarTextHeight">20sp</dimen>
+    <dimen name="home_title">30sp</dimen>
+    <dimen name="home_description">20sp</dimen>
+</resources>

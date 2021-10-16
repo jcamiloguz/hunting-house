@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.sell.SellCreateFragment"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/tbCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+    <TextView
+        android:id="@+id/tvCreateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createTitle"
+        android:textSize="@dimen/home_title"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvCreateLabelTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createLabelTitle"
+        />
+    <EditText
+        android:id="@+id/etCreateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:id="@+id/tvCreateLabelDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createLabelDescription"/>
+    <EditText
+        android:id="@+id/etCreateDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:id="@+id/tvCreateLabelArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createLabelArea"/>
+    <EditText
+        android:id="@+id/etCreateArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:id="@+id/tvCreateLabelImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createLabelImages"/>
+    <HorizontalScrollView
+        android:id="@+id/llCreateImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        ></HorizontalScrollView>
+
+    <Button
+        android:id="@+id/bntAddImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD IMAGE"
+        />
+    <TextView
+        android:id="@+id/tvCreateLabelLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createLabelLocation"/>
+    <RadioGroup
+        android:id="@+id/rgCreateLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/rbCreateSelectLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Location"/>
+        <RadioButton
+            android:id="@+id/rbCreateCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use Actual Location"/>
+    </RadioGroup>
+
+
+
+
+
+
+</LinearLayout>
+    <Button
+        android:id="@+id/btnCreatePublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/publishProperty"
+        android:layout_gravity="center|bottom"
+        android:layout_weight="1"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

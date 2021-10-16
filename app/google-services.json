@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "447431293692",
+    "project_id": "huntinghouse-6412f",
+    "storage_bucket": "huntinghouse-6412f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447431293692:android:c8f12491c0c24b643a7579",
+        "android_client_info": {
+          "package_name": "com.guzcode.huntinghouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447431293692-ejeo5p2p5i1splvcpg6d7r4lnt57u1t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZNg8DMJqti6FMW-A5_nAsI9cz1noMlZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447431293692-ejeo5p2p5i1splvcpg6d7r4lnt57u1t9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
