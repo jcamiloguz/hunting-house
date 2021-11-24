@@ -11,15 +11,36 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center">
+        <TextView
+            android:id="@+id/tvCreateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textSize="@dimen/home_title"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            />
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/profile"/>
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/profile_image"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/profileTitle"
+        android:text="User Name: Juan Camilo Guzman"
+        android:textAlignment="center"
+        />  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location: Cali - Colombia"
+        android:textAlignment="center"
+        />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone: +57 3163619550"
         android:textAlignment="center"
         />
 

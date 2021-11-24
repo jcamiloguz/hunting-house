@@ -30,7 +30,6 @@
                 android:layout_weight="1"
                 android:background="@color/purple_200"
                 android:scaleType="centerCrop"
-                android:src="@drawable/house_placeholder"
                 android:layout_gravity="center_vertical"/>
 
             <LinearLayout

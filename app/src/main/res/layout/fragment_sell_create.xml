@@ -14,11 +14,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginTop="40dp"
     android:padding="10dp"
+    android:paddingBottom="50dp"
     app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
     <TextView
         android:id="@+id/tvCreateTitle"
@@ -67,13 +73,15 @@
         android:id="@+id/tvCreateLabelImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/createLabelImages"/>
-    <HorizontalScrollView
-        android:id="@+id/llCreateImageContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        ></HorizontalScrollView>
+        android:text="Image"/>
+    <ImageView
+        android:id="@+id/imagePreviewCreate"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#f4f4f4"
+        />
+
+
 
     <Button
         android:id="@+id/bntAddImage"
@@ -83,32 +91,31 @@
         />
     <TextView
         android:id="@+id/tvCreateLabelLocation"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/createLabelLocation"/>
-    <RadioGroup
-        android:id="@+id/rgCreateLocation"
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        >
-        <RadioButton
-            android:id="@+id/rbCreateSelectLocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Select Location"/>
-        <RadioButton
-            android:id="@+id/rbCreateCurrentLocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Use Actual Location"/>
-    </RadioGroup>
+        android:text="Set Current Location"
+        android:id="@+id/btnLocationCreate"
 
 
+        />
+    <fragment
+        android:id="@+id/createMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        ></fragment>
 
 
 
 
 </LinearLayout>
+
+
+    </ScrollView>
     <Button
         android:id="@+id/btnCreatePublish"
         android:layout_width="wrap_content"

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".view.ui.sell.SellEditFragment"
+>
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Toolbar
+        android:id="@+id/tbEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <ImageView
+                android:id="@+id/ivDetailImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/cardview_dark_background"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TITLE"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/home_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailTitleDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/home_description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="@dimen/home_description" />
+
+            <fragment
+                android:id="@+id/detailsMap"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </fragment>
+
+            <TextView
+                android:id="@+id/tvDetailTitleUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Posted by"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/home_description"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_weight="1"
+                android:paddingBottom="60dp"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/tvDetailUserImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/cardview_dark_background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/profile_image"/>
+
+                <TextView
+                    android:id="@+id/tvDetailUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Juan Camilo Guzman "
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/home_description"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/tvDetailUserImage"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDetailUserLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cali - Colombia"
+                    android:textSize="@dimen/home_description"
+                    app:layout_constraintStart_toEndOf="@+id/tvDetailUserImage"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDetailUserName" />
+
+                <Button
+                    android:id="@+id/btnDetailUserCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call"
+                    app:layout_constraintStart_toEndOf="@id/tvDetailUserImage"
+                    app:layout_constraintTop_toBottomOf="@id/tvDetailUserLocation" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

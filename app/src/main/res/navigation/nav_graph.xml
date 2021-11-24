@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_buyListFragment_to_sellListFragment"
             app:destination="@id/navSellFragment" />
+        <action
+            android:id="@+id/action_navBuyFragment_to_buyDetailsFragment"
+            app:destination="@id/buyDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/navSellFragment"
@@ -49,6 +52,10 @@
         tools:layout="@layout/fragment_sell_create"/>
     <dialog android:id="@+id/sellEditFragment"
         android:name="com.guzcode.huntinghouse.view.ui.sell.SellEditFragment"
-        android:label="CreateSell"
+        android:label="EditSell"
         tools:layout="@layout/fragment_sell_edit"/>
+    <dialog android:id="@+id/buyDetailsFragment"
+        android:name="com.guzcode.huntinghouse.view.ui.buy.BuyDetailsFragment"
+        android:label="details"
+        tools:layout="@layout/fragment_buy_details"/>
 </navigation>

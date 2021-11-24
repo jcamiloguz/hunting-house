@@ -17,4 +17,5 @@ class Property: Serializable {
     lateinit var userID: DocumentReference
     lateinit var location: GeoPoint
     lateinit var area: String
+    lateinit var image: String
 }

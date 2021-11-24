@@ -53,10 +53,10 @@ class BuyListFragment : Fragment(), PropertyListener {
                 rlBaseBuyList.visibility=View.INVISIBLE
 
         })
-    }
+}
 
     override fun onHouseClick(property: Property, position: Int) {
-//        val bundle = bundleOf("property" to property)
-//        findNavController().navigate(R.id.houseDetailFragmentDialog,bundle)
+        val bundle = bundleOf("property" to property)
+        findNavController().navigate(R.id.buyDetailsFragment,bundle)
     }
 }
